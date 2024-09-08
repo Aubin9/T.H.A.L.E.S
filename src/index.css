@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  --colorBg: rgb(10, 4, 22); 
+  --colorBgVariant: #4b418b;
+  --colorPrimary: #cd5ff8;
+  --ColorPrimaryVariant: #700c86;
+  --colorWhite: whitesmoke;
+  --colorLight: rgba(255, 255, 255, 0.8);
+  --containerWidth-lg: 80%; 
+  --containerWidth-md: 86%; 
+  --containerWidth-sm: 90%;
+  --transition: all 400ms ease;
+  --link: #646cff;
+  --linkHover: #535bf2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--linkHover);
+}
+
+body {
+  /* margin: 0; */
+  display: flex;
+  place-items: center;
+  /* min-width: 400px; */
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: var(--transition);
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+}
+
+.purple {
+  color: var(--imp-text-color) !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+/* --------- */
+/*  Preloader */
+/* --------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0c0513;
+  background-image: url(./assets/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d1950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--ColorPrimaryVariant);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--colorPrimary);
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

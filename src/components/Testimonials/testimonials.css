@@ -1,0 +1,93 @@
+.testimonial-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.testimonial-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.testimonial-card-view {
+  box-shadow: 0 4px 5px 3px var(--ColorPrimaryVariant) !important;
+  color: var(--colorWhite) !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: var(--transition) !important;
+  height: 100% !important;
+}
+.testimonial-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px var(--colorPrimary) !important;
+}
+
+.blog-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.blog-card-view {
+  background-color: transparent !important;
+  box-shadow: 0 3px 3px 2px var(ColorPrimaryVariant) !important;
+  color: var(--colorWhite) !important;
+  transition: var(--transition) !important;
+  height: 100% !important;
+}
+
+.blog-link {
+  color: var(--colorWhite) !important;
+  text-decoration: none !important;
+}
+
+.blog-link:hover {
+  cursor: pointer !important;
+}
+
+.blog-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 3px 3px 5px var(ColorPrimaryVariant) !important;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+.blog-img {
+  padding: 0px !important;
+  opacity: 0.8 !important;
+  border-radius: 0px !important;
+}
+
+.btn-primary {
+  color: var(--colorWhite) !important;
+  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorPrimary) !important;
+}
+
+.btn-primary:hover {
+  color: var(--colorWhite) !important;
+  background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.testimonial-heading {
+  color: var(--colorWhite) !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
